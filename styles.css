@@ -1,0 +1,335 @@
+/*Navbar*/
+.thenav {
+    background-color: rgb(4, 49, 101);
+}
+
+.navtitle {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 2em !important;
+    transition: all 500ms ease;
+    color: white;
+}
+
+.nav-item:hover,
+.navtitle:hover {
+    transform: skew(-20deg);
+    color: #839ae5;
+}
+
+.nav-item {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 2em;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    color: white;
+    transition: all 500ms ease;
+}
+
+
+.fa-bars {
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    float: right;
+    margin-top: -15px;
+}
+
+/*Backgrounds*/
+
+.bodybg {
+    background-color: rgba(206, 206, 206, 0.32);
+}
+
+.headerbg {
+    background-color: rgba(94, 152, 221, 0.13);
+    width: 100%;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.font {
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+/*Carousel*/
+.carousel-caption {
+    top: 10%;
+}
+
+.carouselcaptions2 {
+    text-align: right;
+    font-size: 5em;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.carouselcaptions3 {
+    text-align: right;
+    font-size: 3em;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.carouselcaptions4 {
+    text-align: left;
+    font-size: 5em;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.carouselcaptions5 {
+    text-align: left;
+    font-size: 3em;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.carouselcaptions6 {
+    font-size: 5em;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.carouselcaptions7 {
+    font-size: 3em;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.mpwd {
+    text-shadow: 2px 2px 2px black;
+}
+
+.rdfad {
+    color: rgb(203, 10, 10);
+    text-shadow: 1px 1px 1px rgb(203, 10, 10);
+}
+
+.stnsl {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+}
+
+
+.carimage {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/*About*/
+
+.me {
+    border-radius: 50%;
+    border: solid black 1.5px;
+    margin: 0 auto;
+    height: 100%;
+    box-shadow: 4px 4px 8px grey
+}
+
+.aboutcontainer {
+    border: solid black 1px;
+    height: 600px;
+    box-shadow: 2px 1px 10px black;
+}
+
+.infocontainer {
+    border: solid black 1px;
+    margin: 0 auto;
+    box-shadow: 2px 1px 10px black;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+
+.imageheight {
+    height: 300px;
+    margin-top: 20px;
+
+}
+
+
+
+.abouttext {
+    text-align: center;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+/*Portfolio*/
+
+.portfoliocontainer {
+    height: 450px;
+
+}
+
+.buttons {
+    height: 120px;
+}
+
+.techrow {
+    width: 100%;
+
+}
+
+.technologies {
+    text-align: center;
+    width: 100%;
+
+}
+
+.github:hover {
+    transform: skew(-20deg);
+    color: #839ae5;
+    text-decoration-line: none;
+    transition: all 500ms ease;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn {
+    margin: 5px;
+    border-radius: 18% !important;
+}
+
+.websitebio {
+    text-align: center;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.portcontainer {
+    border: solid black 1px;
+    padding: 20px;
+    width: 90%;
+    height: 655px;
+    box-shadow: 2px 1px 10px black;
+}
+
+.banjoimg {
+    height: 250px;
+    max-width: 100%;
+
+}
+
+/*Social Media*/
+.socialM {
+    font-size: 4em;
+    text-align: center;
+}
+
+/*Contact Form*/
+
+.formarea {
+    width: 100%;
+}
+
+.contactform {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.fab:hover {
+    transform: skew(-10deg);
+    color: #839ae5;
+    text-decoration-line: none;
+    transition: all 800ms ease;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Media Q's*/
+
+@media screen and (min-width: 767px) {
+    .aboutcontainer {
+        height: 400px;
+    }
+
+    .imageheight {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+
+    .portfoliocontainer {
+        height: 620px;
+
+    }
+
+    .portcontainer {
+        height: 450px;
+        padding-bottom:100px
+
+    }
+
+      .banjoimg{
+        padding-top:50px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .sfbanjoinfo{
+        margin-top: -150px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfoliocontainer {
+        height: 775px;
+
+
+    }
+    .portcontainer {
+       height: 600px;
+        padding-bottom:150px
+
+    }
+
+    .contactform {
+        width: 80%;
+
+    }
+    .banjoimg{
+        height:300px;
+        margin-top:30px;
+
+    }
+    .banjoa{
+        height: 330px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .buttons{
+ padding-top: 0px;
+        margin-top: 0px;
+
+    }
+}
+
+@media screen and (min-width: 818px) {
+    .portfoliocontainer {
+        height: 575px;
+    }
+
+    .portcontainer {
+        height: 410px;
+    }
+
+    .banjoimg{
+        padding-top:50px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-width: 1010px) {
+    .portfoliocontainer {
+        height: 460px;
+    }
+
+    .portcontainer {
+        height: 320px;
+    }
+}
+}
+
+@media screen and (min-width: 1345px) {
+    .portfoliocontainer {
+        height: 420px;
+    }
+}
