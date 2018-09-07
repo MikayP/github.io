@@ -165,7 +165,7 @@
            <div class="d-flex justify-content-center formarea">
              <h1 class="d-flex justify-content-center headerbg">Contact</h1>
     </div>
-        <form action="https://formspree.io/mikeportmanj@gmail.com" class="mt-4 mb-4 contactform pb-3" method="POST">
+        <form action="https://formspree.io/mikeportmanj@gmail.com" class="mt-4 mb-4 contactform pb-3" method="POST" id="userform">
             <div class="form-group">
                 <label class="formLabel d-flex justify-content-center" for="exampleFormControlInput1">Name</label>
                 <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
@@ -173,12 +173,12 @@
 
             <div class="form-group">
                 <label class="formLabel d-flex justify-content-center" for="exampleFormControlInput2">Email Address</label>
-                <input type="email" name="emailaddress" class="form-control" id="exampleFormControlInput2" placeholder="name@gmail.com">
+                <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput2" placeholder="name@gmail.com">
             </div>
 
             <div class="form-group ">
                 <label class="formLabel d-flex justify-content-center" for="exampleFormControlTextarea1">Message</label>
-                <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message" form="userform"></textarea>
             </div>
             <div class="button pt-4 d-flex justify-content-center">
                 <button type="submit" class="formLabel buttonbackground" value="Send" name="submit">Submit</button>
