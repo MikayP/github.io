@@ -175,11 +175,16 @@
                 <label class="formLabel d-flex justify-content-center" for="exampleFormControlInput2">Email Address</label>
                 <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput2" placeholder="name@gmail.com">
             </div>
+         <div class="form-group ">
+                <label class="formLabel d-flex justify-content-center" for="exampleFormControlTextarea3">Subject</label>
+                <textarea type="text" name="_subject" class="form-control" id="exampleFormControlTextarea3" rows="1" placeholder="Subject" ></textarea>
+            </div>
 
             <div class="form-group ">
                 <label class="formLabel d-flex justify-content-center" for="exampleFormControlTextarea1">Message</label>
-                <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message" form="userform"></textarea>
+                <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
             </div>
+            <input type="hidden" name="_next" value="http://mikeportman.com">
             <div class="button pt-4 d-flex justify-content-center">
                 <button type="submit" class="formLabel buttonbackground" name="submit">Submit</button>
             </div>
