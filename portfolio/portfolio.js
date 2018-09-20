@@ -2,6 +2,6 @@ $('.tile').click(function () {
     $(this).toggleClass('flipped');
 });
 
-$('.tile').mouseout(function () {
+$('.tile').mouseleave(function () {
     $(this).removeClass('flipped');
 });
