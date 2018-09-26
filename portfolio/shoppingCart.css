@@ -87,6 +87,11 @@ img {
     width: 100px;
 }
 
+.itemCount{
+        box-shadow: 1px 1px 5px black;
+    width:50px;
+    text-align: center
+}
 button {
     border-radius: 10px;
     border: solid 1.5px black;
