@@ -1,0 +1,107 @@
+<!doctype HTML>
+<html>
+    <head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="title">Got Jelly Beans?</h1>
+
+    <div class="allTheJellies">
+        <ul class="jellyList">
+            <li class="inlineJellies"><a class="addToCart" href="#" data-name="Cherry" data-price="2.20">
+                    <div class="relative">
+                        <img src="images/cherry.jpg"><br>
+                        <div class="photoOverlay">
+                            Cherry $2.20
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="inlineJellies">
+                <a class="addToCart" href="#" data-name="GreenApple" data-price="2.85">
+                    <div class="relative">
+                        <img src="images/greenapple.jpg">
+                        <div class="photoOverlay">
+                            Green Apple $2.85
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="inlineJellies">
+                <a class="addToCart" href="#" data-name="Licorice" data-price="1.80">
+                    <div class="relative">
+                        <img src="images/licorice.jpg">
+                        <div class="photoOverlay">
+                            Licorice $1.80
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="jellyList">
+            <li class="inlineJellies">
+                <a class="addToCart" href="#" data-name="Pear" data-price="4.80">
+                    <div class="relative">
+                        <img src="images/pear.jpeg">
+                        <div class="photoOverlay">
+                            Pear $4.80
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="inlineJellies">
+                <a class="addToCart" href="#" data-name="Popcorn" data-price="0.40">
+                    <div class="relative">
+                        <img src="images/popcorn.jpg">
+                        <div class="photoOverlay">
+                            Popcorn $0.40
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="inlineJellies">
+                <a class="addToCart" href="#" data-name="Watermelon" data-price="2.40">
+                    <div class="relative">
+                        <img src="images/watermelon.jpg">
+                        <div class="photoOverlay">
+                            Watermelon $2.40
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="cartTotals">
+        <ul id="showCart">
+            <!--            -->
+        </ul>
+        <div>
+            You have <span id="count_Cart"> 0 </span> items in your cart
+        </div>
+        <div>
+            Total Cart: $<span id="totalCart"></span>
+        </div>
+
+    <button id="clearCart">Clear Cart</button>
+    </div>
+
+
+
+
+    <script src="shoppingCart.js"></script>
+
+
+
+</body>
+</html>
+
