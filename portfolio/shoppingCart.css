@@ -61,6 +61,7 @@ img {
     text-align: center;
     color: rgb(255, 255, 255);
     margin:0;
+        text-shadow: 1px 1px 5px black;
 }
 
 .cartTotals{
@@ -68,11 +69,13 @@ img {
     text-align: center;
       font-family: 'Do Hyeon', sans-serif;
     color:white;
+    text-shadow: 1px 1px 5px black;
 }
 
 .subtractItem, .plusItem{
     height:40px;
     width:40px;
+
 }
 
 .deleteItem, #clearCart{
@@ -80,3 +83,10 @@ img {
     width:100px;
 }
 
+button{
+    border-radius: 10px;
+    border:solid 1.5px black;
+    font-size:1.1rem;
+
+          font-family: 'Do Hyeon', sans-serif;
+}
