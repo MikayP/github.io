@@ -1,4 +1,4 @@
-     $(".addToCart").click(function(event) {
+$(".addToCart").click(function(event) {
             event.preventDefault(); //prevents link from doing its normal link behavior
             var name = $(this).attr("data-name"); //(this) is to select just the one thats clicked. attr for accessing one of the attributes in the link
             var price = Number($(this).attr("data-price")); //Number converts string to number if needed
@@ -69,7 +69,7 @@ shoppingCart.Item = function (name, price, count) {
 };
 
 shoppingCart.addItemToCart = function (name, price, count) {
-    for (var i in shoppingCart.cart) {
+    for (var i in this.cart) {
         if (this.cart[i].name === name) {
             this.cart[i].count += count;
             this.saveCart(); //needed to save each time the loop happens
