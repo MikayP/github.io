@@ -273,9 +273,16 @@
 }
 
 @media screen and (max-width: 768px) {
+    .abouttext{
+        font-size:2rem;
+    }
+
+    .aboutcontainer{
+        height:1000px;
+    }
+
     .portfoliocontainer {
         height: 1385px;
-
 
     }
     .portcontainer {
