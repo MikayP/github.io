@@ -199,13 +199,14 @@
 .banjoimg {
     height: 250px;
     max-width: 100%;
+    border-radius: 15px;
 }
 
 
-.cardimg{
-     max-width:85%;
-        max-height:250px;
-
+.cardimg {
+    max-width: 85%;
+    max-height: 250px;
+    border-radius: 15px;
 }
 
 /*Social Media*/
@@ -236,6 +237,85 @@
 
 /*Media Q's*/
 
+
+@media screen and (max-width: 768px) {
+    .abouttext {
+        font-size: 2rem;
+    }
+
+    .aboutcontainer {
+        height: 1000px;
+    }
+
+    .portfoliocontainer {
+        height: 1385px;
+
+    }
+
+    .portcontainer {
+        height: 1230px;
+        padding-bottom: 150px
+    }
+
+    .contactform {
+        width: 80%;
+
+    }
+
+    .banjoimg {
+        height: 300px;
+        margin-top: 30px;
+
+    }
+
+    .cardimg {
+        margin-top: 80px
+    }
+
+    .banjoa {
+        height: 330px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .buttons {
+        padding-top: 0px;
+        margin-top: 0px;
+
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .imageheight {
+        margin-top: 80px;
+    }
+
+    .abouttext {
+        font-size: 1.6em;
+    }
+
+    .techrow {
+        font-size: 2em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .cardimg {
+          position: relative;
+        top: 70%;
+        transform: translateY(-50%);
+
+    }
+     .portfoliocontainer{
+        height:2250px;
+    }
+
+    .portcontainer{
+        height:2100px;
+    }
+}
+
 @media screen and (min-width: 767px) {
     .aboutcontainer {
         height: 400px;
@@ -255,70 +335,26 @@
 
     .portcontainer {
         height: 750px;
-        padding-bottom:100px
-
+        padding-bottom: 100px
     }
 
-      .banjoimg{
-        padding-top:50px;
+    .banjoimg {
+        padding-top: 50px;
+
         position: relative;
         top: 50%;
         transform: translateY(-50%);
     }
 
-    .sfbanjoinfo{
+    .sfbanjoinfo {
         margin-top: -150px;
 
     }
 }
 
-@media screen and (max-width: 768px) {
-    .abouttext{
-        font-size:2rem;
-    }
-
-    .aboutcontainer{
-        height:1000px;
-    }
-
-    .portfoliocontainer {
-        height: 1385px;
-
-    }
-    .portcontainer {
-       height: 1230px;
-        padding-bottom:150px
-
-    }
-
-    .contactform {
-        width: 80%;
-
-    }
-    .banjoimg{
-        height:300px;
-        margin-top:30px;
-
-    }
-
-    .cardimg{
-        margin-top:80px
-    }
-    .banjoa{
-        height: 330px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-    }
-
-    .buttons{
- padding-top: 0px;
-        margin-top: 0px;
-
-    }
-}
-
 @media screen and (min-width: 818px) {
-/*
+
+    /*
     .portfoliocontainer {
         height: 575px;
     }
@@ -327,14 +363,14 @@
         height: 410px;
     }
 */
-    .cardimg{
-        width:100%;
-        height:auto;
+    .cardimg {
+        width: 100%;
+        height: auto;
 
     }
 
-    .banjoimg{
-        padding-top:50px;
+    .banjoimg {
+        padding-top: 50px;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -356,4 +392,8 @@
     .portfoliocontainer {
         height: 420px;
     }
+}
+
+@-ms-viewport {
+    width: device-width;
 }
