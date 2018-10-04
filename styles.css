@@ -153,6 +153,12 @@
     height: 450px;
 
 }
+.card{
+    box-shadow: 2px 2px 8px black;
+}
+.card-text{
+    text-align: center;
+}
 
 .buttons {
     height: 120px;
@@ -238,6 +244,38 @@
 /*Media Q's*/
 
 
+@media screen and (min-width: 767px) {
+    .aboutcontainer {
+        height: 400px;
+    }
+
+    .imageheight {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+
+   .portfoliocontainer{
+        height:1200px;
+    }
+
+    .banjoimg {
+        padding-top: 50px;
+
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .sfbanjoinfo {
+        margin-top: -150px;
+
+    }
+}
+
+
+
 @media screen and (max-width: 768px) {
     .abouttext {
         font-size: 2rem;
@@ -247,19 +285,14 @@
         height: 1000px;
     }
 
-    .portfoliocontainer {
-        height: 1385px;
-
-    }
-
-    .portcontainer {
-        height: 1230px;
-        padding-bottom: 150px
-    }
 
     .contactform {
         width: 80%;
 
+    }
+
+     .portfoliocontainer{
+        height:1750px;
     }
 
     .banjoimg {
@@ -285,6 +318,14 @@
     }
 }
 
+@media screen and (min-width: 625px) {
+    .portfoliocontainer{
+
+     height:1220px;
+    }
+}
+
+
 
 @media screen and (max-width: 450px) {
     .imageheight {
@@ -307,68 +348,26 @@
         transform: translateY(-50%);
 
     }
-     .portfoliocontainer{
-        height:2250px;
+
+    .portfoliocontainer{
+        height:1750px;
     }
 
-    .portcontainer{
-        height:2100px;
-    }
 }
 
-@media screen and (min-width: 767px) {
-    .aboutcontainer {
-        height: 400px;
-    }
 
-    .imageheight {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        margin: 0;
-    }
-
-    .portfoliocontainer {
-        height: 920px;
-
-    }
-
-    .portcontainer {
-        height: 750px;
-        padding-bottom: 100px
-    }
-
-    .banjoimg {
-        padding-top: 50px;
-
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .sfbanjoinfo {
-        margin-top: -150px;
-
-    }
-}
 
 @media screen and (min-width: 818px) {
 
-    /*
-    .portfoliocontainer {
-        height: 575px;
-    }
 
-    .portcontainer {
-        height: 410px;
-    }
-*/
     .cardimg {
         width: 100%;
         height: auto;
 
     }
-
+.portfoliocontainer{
+        height:1200px;
+    }
     .banjoimg {
         padding-top: 50px;
         position: relative;
@@ -377,22 +376,13 @@
     }
 }
 
-@media screen and (min-width: 1010px) {
-    .portfoliocontainer {
-        height: 820px;
-    }
+@media screen and (min-width: 930px) {
+    .portfoliocontainer{
 
-    .portcontainer {
-        height: 670px;
+     height:720px;
     }
-}
 }
 
-@media screen and (min-width: 1345px) {
-    .portfoliocontainer {
-        height: 420px;
-    }
-}
 
 @-ms-viewport {
     width: device-width;
