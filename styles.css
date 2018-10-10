@@ -292,7 +292,7 @@
     }
 
      .portfoliocontainer{
-        height:1750px;
+        height:2250px;
     }
 
     .banjoimg {
@@ -350,7 +350,7 @@
     }
 
     .portfoliocontainer{
-        height:1750px;
+        height:2250px;
     }
 
 }
@@ -376,12 +376,21 @@
     }
 }
 
+@media screen and (min-width: 1233px) {
+    .portfoliocontainer{
+
+     height:700px;
+    }
+}
+/*
+
 @media screen and (min-width: 930px) {
     .portfoliocontainer{
 
-     height:720px;
+     height:800px;
     }
 }
+*/
 
 
 @-ms-viewport {
