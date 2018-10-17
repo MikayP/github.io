@@ -189,6 +189,10 @@
     border-radius: 18% !important;
 }
 
+.boots{
+   text-align: center
+}
+
 .websitebio {
     text-align: center;
     font-family: 'PT Sans Caption', sans-serif;
@@ -242,6 +246,37 @@
 }
 
 /*Media Q's*/
+@media screen and (max-width: 450px) {
+    .imageheight {
+        margin-top: 80px;
+    }
+
+    .abouttext {
+        font-size: 1.6em;
+    }
+
+    .techrow {
+        font-size: 2em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .cardimg {
+          position: relative;
+        top: 70%;
+        transform: translateY(-50%);
+
+    }
+
+    .portfoliocontainer{
+        height:2750px;
+    }
+
+}
+
+
+
+
 
 
 @media screen and (min-width: 767px) {
@@ -257,7 +292,7 @@
     }
 
    .portfoliocontainer{
-        height:1200px;
+        height:800px;
     }
 
     .banjoimg {
@@ -276,7 +311,24 @@
 
 
 
-@media screen and (max-width: 768px) {
+
+
+
+@media screen and (min-width: 451px){
+    .portfoliocontainer{
+        height:2750px
+    }
+}
+
+
+@media screen and (min-width: 625px) {
+    .portfoliocontainer{
+
+     height:1720px;
+    }
+}
+
+@media screen and (min-width: 766px) {
     .abouttext {
         font-size: 2rem;
     }
@@ -292,7 +344,7 @@
     }
 
      .portfoliocontainer{
-        height:2250px;
+        height:2750px;
     }
 
     .banjoimg {
@@ -318,55 +370,16 @@
     }
 }
 
-@media screen and (min-width: 625px) {
-    .portfoliocontainer{
-
-     height:1220px;
-    }
-}
-
-
-
-@media screen and (max-width: 450px) {
-    .imageheight {
-        margin-top: 80px;
-    }
-
-    .abouttext {
-        font-size: 1.6em;
-    }
-
-    .techrow {
-        font-size: 2em;
-        text-align: center;
-        margin: 0;
-    }
-
-    .cardimg {
-          position: relative;
-        top: 70%;
-        transform: translateY(-50%);
-
-    }
-
-    .portfoliocontainer{
-        height:2250px;
-    }
-
-}
-
 
 
 @media screen and (min-width: 818px) {
-
-
     .cardimg {
         width: 100%;
         height: auto;
 
     }
 .portfoliocontainer{
-        height:1200px;
+        height:1230px;
     }
     .banjoimg {
         padding-top: 50px;
@@ -376,21 +389,13 @@
     }
 }
 
+
 @media screen and (min-width: 1233px) {
     .portfoliocontainer{
 
      height:700px;
     }
 }
-/*
-
-@media screen and (min-width: 930px) {
-    .portfoliocontainer{
-
-     height:800px;
-    }
-}
-*/
 
 
 @-ms-viewport {
