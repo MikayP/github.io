@@ -124,6 +124,7 @@
     border: solid black 1px;
     height: 600px;
     box-shadow: 2px 1px 10px black;
+    height:1000px;
 }
 
 .infocontainer {
@@ -279,44 +280,17 @@
 
 
 
-@media screen and (min-width: 767px) {
-    .aboutcontainer {
-        height: 400px;
-    }
-
-    .imageheight {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        margin: 0;
-    }
-
-   .portfoliocontainer{
-        height:800px;
-    }
-
-    .banjoimg {
-        padding-top: 50px;
-
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .sfbanjoinfo {
-        margin-top: -150px;
-
-    }
-}
-
-
-
-
-
 
 @media screen and (min-width: 451px){
+
+    .aboutcontainer{
+        height:900px;
+        font-size:1.8em;
+    }
+
     .portfoliocontainer{
-        height:2750px
+        height:2750px;
+
     }
 }
 
@@ -330,11 +304,12 @@
 
 @media screen and (min-width: 766px) {
     .abouttext {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .aboutcontainer {
-        height: 1000px;
+        height: 380px;
+
     }
 
 
@@ -344,7 +319,7 @@
     }
 
      .portfoliocontainer{
-        height:2750px;
+        height:1720px;
     }
 
     .banjoimg {
@@ -378,9 +353,7 @@
         height: auto;
 
     }
-.portfoliocontainer{
-        height:1230px;
-    }
+
     .banjoimg {
         padding-top: 50px;
         position: relative;
@@ -389,14 +362,19 @@
     }
 }
 
+@media screen and (min-width: 930px) {
 
-@media screen and (min-width: 1233px) {
     .portfoliocontainer{
-
-     height:700px;
+        height: 1200px;
     }
 }
 
+@media screen and (min-width: 1537px) {
+
+    .portfoliocontainer{
+        height: 700px;
+    }
+}
 
 @-ms-viewport {
     width: device-width;
