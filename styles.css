@@ -246,6 +246,7 @@
     font-weight: bold;
 }
 
+
 /*Media Q's*/
 @media screen and (max-width: 450px) {
     .imageheight {
@@ -270,15 +271,10 @@
     }
 
     .portfoliocontainer{
-        height:2750px;
+        height:3450px;
     }
 
 }
-
-
-
-
-
 
 
 @media screen and (min-width: 451px){
@@ -289,7 +285,7 @@
     }
 
     .portfoliocontainer{
-        height:2750px;
+        height:3460px;
 
     }
 }
@@ -298,7 +294,7 @@
 @media screen and (min-width: 625px) {
     .portfoliocontainer{
 
-     height:1720px;
+     height:3550px;
     }
 }
 
@@ -319,7 +315,7 @@
     }
 
      .portfoliocontainer{
-        height:1720px;
+        height:3700px;
     }
 
     .banjoimg {
@@ -365,16 +361,24 @@
 @media screen and (min-width: 930px) {
 
     .portfoliocontainer{
-        height: 1200px;
+        height: 3720px;
     }
 }
 
-@media screen and (min-width: 1537px) {
+@media screen and (min-width: 980px) {
 
     .portfoliocontainer{
-        height: 700px;
+        height: 3780px;
     }
 }
+
+@media screen and (min-width: 992px) {
+
+    .portfoliocontainer{
+        height: 1550px;
+    }
+}
+
 
 @-ms-viewport {
     width: device-width;
