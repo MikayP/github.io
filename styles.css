@@ -190,9 +190,7 @@
     border-radius: 18% !important;
 }
 
-.boots{
-   text-align: center
-}
+
 
 .websitebio {
     text-align: center;
@@ -213,12 +211,38 @@
     border-radius: 15px;
 }
 
-
-.cardimg {
-    max-width: 85%;
-    max-height: 250px;
-    border-radius: 15px;
+.card{
+    position: relative;
 }
+
+.card-img-top{
+    height:240px;
+    padding-top:10px;
+}
+
+.boots{
+    text-align: center;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  visibility: hidden;
+    /* pointer-events: none; */
+}
+
+
+.card-img-top:hover{
+    opacity: 0.4;
+    
+}
+
+.card-img-top:hover .boots{
+   opacity:0.9;
+    visibility: visible;
+    display:block;
+}
+
 
 /*Social Media*/
 .socialM {
@@ -271,7 +295,7 @@
     }
 
     .portfoliocontainer{
-        height:3450px;
+        height:3750px;
     }
 
 }
@@ -281,11 +305,10 @@
 
     .aboutcontainer{
         height:900px;
-        font-size:1.8em;
     }
 
     .portfoliocontainer{
-        height:3460px;
+        height:3800px;
 
     }
 }
@@ -294,7 +317,7 @@
 @media screen and (min-width: 625px) {
     .portfoliocontainer{
 
-     height:3550px;
+     height:3680px;
     }
 }
 
@@ -315,7 +338,7 @@
     }
 
      .portfoliocontainer{
-        height:3700px;
+        height:3550px;
     }
 
     .banjoimg {
@@ -361,24 +384,45 @@
 @media screen and (min-width: 930px) {
 
     .portfoliocontainer{
-        height: 3720px;
+        height: 3420px;
     }
 }
 
 @media screen and (min-width: 980px) {
 
     .portfoliocontainer{
-        height: 3780px;
+        height: 3380px;
     }
 }
 
 @media screen and (min-width: 992px) {
 
     .portfoliocontainer{
-        height: 1450px;
+        height: 1750px;
     }
 }
 
+
+@media screen and (min-width: 1010px) {
+
+    .portfoliocontainer{
+        height: 1680px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    .portfoliocontainer{
+        height: 1580px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .portfoliocontainer{
+        height: 1500px;
+    }
+}
 
 @-ms-viewport {
     width: device-width;
