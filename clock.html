@@ -109,14 +109,18 @@
       minuteHand.style.transform = (`rotate(${minDegrees}deg`);
       hourHand.style.transform = (`rotate(${hourDegrees}deg`);
       //for digital
-      if( hour < 12){
+
+      if(hour == "0"){
+        document.getElementById('digitalClock').innerHTML = 
+      "12" + ":" + minutes + ":" + seconds + " am";
+      }else if( hour < 12){
       document.getElementById('digitalClock').innerHTML = 
       hour + ":" + minutes + ":" + seconds + " am";
     } else{
       document.getElementById('digitalClock').innerHTML = 
       (hour -12) + ":" + minutes + ":" + seconds + " pm";
     }
-
+console.log(hour);
     function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
