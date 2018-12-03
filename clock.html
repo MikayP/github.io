@@ -12,7 +12,7 @@
   <h1 id="digitalClock">
 
   </h1>
-</div>
+  </div>
   <div class="clock">
     <div class="clock-face">
       <div class="hand hour-hand"></div>
@@ -27,14 +27,14 @@
 
   <style>
     html {
-      background-image:url(https://i.ibb.co/MpD045s/clockbg.png);
+      background-image: url(https://i.ibb.co/MpD045s/clockbg.png);
       background-size: contain;
       background-position: center;
-      background-repeat:no-repeat;
+      background-repeat: no-repeat;
       font-family: sans-serif;
       text-align: center;
       font-size: 10px;
-      background-position: 55% ;
+      background-position: 55%;
     }
 
     body {
@@ -45,11 +45,12 @@
       align-items: center;
     }
 
-    h1{
-      font-size:4em;
-      color:rgb(52, 93, 228);
-      text-shadow: 2px 3px  black;
+    h1 {
+      font-size: 4em;
+      color: rgb(52, 93, 228);
+      text-shadow: 2px 3px black;
     }
+
     .clock {
       width: 45rem;
       height: 45rem;
@@ -79,7 +80,7 @@
       background: rgb(52, 93, 228);
       position: absolute;
       top: 50%;
-            transform-origin: 100%;
+      transform-origin: 100%;
       /* rotates on right side */
       transform: rotate(90deg);
       /* puts at 12 o clock */
@@ -90,7 +91,6 @@
   </style>
 
   <script>
-
     const secondHand = document.querySelector('.second-hand');
     const minuteHand = document.querySelector('.min-hand');
     const hourHand = document.querySelector('.hour-hand');
@@ -99,7 +99,7 @@
       const now = new Date();
       let seconds = now.getSeconds();
       let minutes = now.getMinutes();
-      const hour = now.getHours();
+      const hour = now.getHours() + 17;
       const minDegrees = ((minutes / 60) * 360) + 90;
       const secondsDegrees = ((seconds / 60) * 360) + 90; //the 90 offsets the css transform
       const hourDegrees = ((hour / 12) * 360) + 90;
@@ -110,22 +110,24 @@
       hourHand.style.transform = (`rotate(${hourDegrees}deg`);
       //for digital
 
-      if(hour == "0"){
-        document.getElementById('digitalClock').innerHTML = 
-      "12" + ":" + minutes + ":" + seconds + " am";
-      }else if( hour < 12){
-      document.getElementById('digitalClock').innerHTML = 
-      hour + ":" + minutes + ":" + seconds + " am";
-    } else{
-      document.getElementById('digitalClock').innerHTML = 
-      (hour -12) + ":" + minutes + ":" + seconds + " pm";
+      if (hour == "0") {
+        document.getElementById('digitalClock').innerHTML =
+          "12" + ":" + minutes + ":" + seconds + " am";
+      } else if (hour < 12) {
+        document.getElementById('digitalClock').innerHTML =
+          hour + ":" + minutes + ":" + seconds + " am";
+      } else {
+        document.getElementById('digitalClock').innerHTML =
+          (hour - 12) + ":" + minutes + ":" + seconds + " pm";
+      }
+
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i
+        }; // add zero in front of numbers < 10
+        return i;
+      }
     }
-console.log(hour);
-    function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-}
 
 
     setInterval(setDate, 1000);
