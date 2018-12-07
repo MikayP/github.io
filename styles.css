@@ -148,12 +148,6 @@
     font-family: 'PT Sans Caption', sans-serif;
 }
 
-/*Portfolio*/
-
-.portfoliocontainer {
-    height: 450px;
-
-}
 .card{
     box-shadow: 2px 2px 8px black;
 }
@@ -296,9 +290,7 @@
 
     }
 
-    .portfoliocontainer{
-        height:4550px;
-    }
+
 
 }
 
@@ -309,19 +301,9 @@
         height:900px;
     }
 
-    .portfoliocontainer{
-        height:4500px;
-
-    }
 }
 
 
-@media screen and (min-width: 625px) {
-    .portfoliocontainer{
-
-     height:4440px;
-    }
-}
 
 @media screen and (min-width: 766px) {
     .abouttext {
@@ -339,9 +321,6 @@
 
     }
 
-     .portfoliocontainer{
-        height:4250px;
-    }
 
     .banjoimg {
         height: 300px;
@@ -383,49 +362,4 @@
     }
 }
 
-@media screen and (min-width: 930px) {
 
-    .portfoliocontainer{
-        height: 4120px;
-    }
-}
-
-@media screen and (min-width: 980px) {
-
-    .portfoliocontainer{
-        height: 4050px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    .portfoliocontainer{
-        height: 2180px;
-    }
-}
-
-
-@media screen and (min-width: 1010px) {
-
-    .portfoliocontainer{
-        height: 2150px;
-    }
-}
-
-@media screen and (min-width: 1150px) {
-
-    .portfoliocontainer{
-        height: 2080px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-
-    .portfoliocontainer{
-        height: 1960px;
-    }
-}
-
-@-ms-viewport {
-    width: device-width;
-}

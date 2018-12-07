@@ -41,7 +41,7 @@
   const countDown = document.getElementById('countDown');
   let lastHole;
   let score = 0;
-  let timer = 10;
+  
 
 function randomTime(min,max){
     return Math.round(Math.random()* (max - min) + min);
@@ -69,20 +69,28 @@ function peep(){
 }
 
 function startGame(){
-    scoreBoard.textContent = 0;
+    scoreBoard.innerHTML = 0;
     timeUp = false;
     score = 0;
+    let timer = 10;
     peep();
     setTimeout(() => timeUp = true, 10000)
-
     setInterval(function(){
         timer--;
-        countDown.textContent = timer;
+        // countDown.textContent = timer;
 
-        if(timer <= 0){
-            countDown.textContent = "Times up!"
+        if(timer > 0){
+          countDown.classList.remove('timeUp')
+          countDown.innerHTML = timer;
+           
+        } else {
+          countDown.innerHTML = "Times up!";
+            countDown.classList.add('timeUp');
+            return;
         }
+        console.log(timer);
     },1000);
+
        
 }
 
