@@ -74,8 +74,8 @@ function startGame(){
     score = 0;
     let timer = 10;
     peep();
-    setTimeout(() => timeUp = true, 10000)
-    setInterval(function(){
+
+    var timeOut = setInterval(function(){
         timer--;
         // countDown.textContent = timer;
 
@@ -86,13 +86,19 @@ function startGame(){
         } else {
           countDown.innerHTML = "Times up!";
             countDown.classList.add('timeUp');
+            
             return;
         }
         console.log(timer);
     },1000);
 
-       
+       clearInterval(timeOut);
 }
+
+// startgame should be a class with a start and stop method
+// inside of the timer defined by the start method, we call the stop method after the timer is off
+// we can reference the stop method by taking advantage of how a parent scope is passed
+// down to the child scope. we can then reference a {parent}.timer in order to properly call stop timer
 
 function bonk(e){
 if (!e.isTrusted) return; //cheater without clicking
