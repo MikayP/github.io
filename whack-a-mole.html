@@ -88,8 +88,7 @@
         } else {
           countDown.innerHTML = "Times up!";
           countDown.classList.add('timeUp');
-
-          return;
+          clearInterval(timeOut);
         }
         console.log(timer);
 
