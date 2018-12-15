@@ -75,9 +75,8 @@ function startGame(){
     let timer = 10;
     peep();
     setTimeout(() => timeUp = true, 10000)
-    setInterval(function(){
+    var timeOut = setInterval(function(){
         timer--;
-        // countDown.textContent = timer;
 
         if(timer > 0){
           countDown.classList.remove('timeUp')
@@ -86,12 +85,11 @@ function startGame(){
         } else {
           countDown.innerHTML = "Times up!";
             countDown.classList.add('timeUp');
-            return;
+            clearInterval(timeOut);
         }
         console.log(timer);
     },1000);
-
-       
+    
 }
 
 function bonk(e){
