@@ -65,7 +65,6 @@
       hole.classList.add('up');
       setTimeout(() => {
         hole.classList.remove('up');
-<<<<<<< HEAD
        if(!timeUp) peep();
 
     }, time);
@@ -79,22 +78,6 @@ function startGame(){
     peep();
     setTimeout(() => timeUp = true, 10000)
     var timeOut = setInterval(function(){
-=======
-        if (!timeUp) peep();
-
-      }, time);
-    }
-
-    function startGame() {
-      scoreBoard.innerHTML = 0;
-      timeUp = false;
-      score = 0;
-      let timer = 10;
-      peep();
-      setTimeout(() => timeUp = true, 10000)
-
-      var timeOut = setInterval(function () {
->>>>>>> fe7a2b4c2f5e05693aac350954577c5ec193f1d1
         timer--;
 
         if (timer > 0) {
@@ -103,7 +86,6 @@ function startGame(){
 
         } else {
           countDown.innerHTML = "Times up!";
-<<<<<<< HEAD
             countDown.classList.add('timeUp');
             clearInterval(timeOut);
         }
@@ -111,17 +93,8 @@ function startGame(){
     },1000);
     
 }
-=======
-          countDown.classList.add('timeUp');
-          clearInterval(timeOut);
-        }
-        console.log(timer);
-
-      }, 1000);
->>>>>>> fe7a2b4c2f5e05693aac350954577c5ec193f1d1
 
 
-    }
 
     // startgame should be a class with a start and stop method
     // inside of the timer defined by the start method, we call the stop method after the timer is off
