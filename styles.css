@@ -25,6 +25,7 @@
     transition: all 500ms ease;
 }
 
+p{ font-family: 'PT Sans Caption', sans-serif;}
 
 .fa-bars {
     color: white;
@@ -198,6 +199,8 @@
     height: 655px;
     box-shadow: 2px 1px 10px black;
 }
+
+.card-title{margin-bottom: 0;}
 
 .banjoimg {
     height: 250px;

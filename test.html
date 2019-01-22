@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .rect {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        position: relative;
+      }
+      .rect:hover {
+        transform: scale(2);
+      }
+      .text {
+        font-size: 20px;
+      }
+      .badge{
+          position:absolute;
+          top:-10px;
+          left:-10px;
+      }
+      .rect .badge {
+        width: 20px;
+        height: 20px;
+        border: 1px solid green;
+        display: relative;
+        border-radius: 50%;
+        text-align: center;
+      }
+      @media only screen and (max-width: 500px) {
+        .rect {
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rect"><div class="badge">6</div></div>
+    <span class="text">You have 6 messages.</span>
+  </body>
+<html>
