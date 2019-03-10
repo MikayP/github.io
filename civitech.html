@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="./portfolio/civitech.css">
+</head>
+
+<body>
+  <div class="d-inline-block left">
+    <p>Logo</p>
+  </div>
+    <div class="d-inline-block right">
+    <ul class="nav">
+      <li class="nav-item d-inline">
+        <a class="nav-link active" href="#">James K. Polk</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Calendar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Maps</a>
+      </li>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Mike
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button">Profile</button>
+          <button class="dropdown-item" type="button">Security</button>
+          <button class="dropdown-item" type="button">Sign Out</button>
+        </div>
+      </div>
+    </ul>
+  </div>
+ 
+  <h1 class="pb-4"></h1>
+  <div class="bodyContainer">
+
+
+    <div class="container-fluid p-5">
+      <div class="row ">
+        <div class="col m-3 p-2">
+          <div class="row mb-3 p-2 announceDiv">
+            <img class="profileImg" src="https://cdn3-www.musicfeeds.com.au/assets/uploads/bdc4a9bc19c104f0f7b55351fd5b7c05.png">
+            <h4 class="pt-5">Mike Portman</h4>
+            <p class="announceText">Registered: Yes (Democrat)<br>
+              Campaign Role: Street Team Leader<br>
+              Next Election: Texas Primary 3/3/2020<br>
+              <span id="timer"></span></p>
+          </div>
+          <div class="row mb-3 p-2 announceDiv">
+            <h4>This week by the numbers:</h4>
+            <p class="announceText">Money Raised: $$$<br>
+              New Volunteers: ###<br>
+              Voter Registrations: ###
+            </p>
+          </div>
+
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                aria-controls="nav-home" aria-selected="true">Goals</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                aria-controls="nav-profile" aria-selected="false">KPIs</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">Last Election</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+              <p class="">Money Remaining: $$$<br>
+                New Registrants: ###<br>
+                Turnout: x%</p>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <p class="">Latest Polling Data<br>
+                Money Raised: $$$ <br>
+                Total New Registrants: ###</p>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <p class="">Top Two Candidates: xxxx xxxx<br>
+                Winner: xxxx <br>
+                Vote Totals: ### ###</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-6 ">
+          <h4>Announcements</h4>
+
+          <div class="row mb-3 p-2 announceDiv">
+            <div class="col">
+              <i class="fas fa-microphone"></i>
+            </div>
+            <div class="col-11">
+              <h6>Town hall meeting 7/4/1884</h6>
+              <p class="announceText">15th St NW, Washington, DC 20024</p>
+              <p class="announceText">11am</p>
+              <p class="announceText">Governor Polk will be discussing Britains control over Oregon Country</p>
+              <img class="map" src="https://museum.gwu.edu/sites/g/files/zaxdzs2356/f/image/Shenkman-27s-01-fv-header.jpg">
+              <button>More Info/RSVP</button>
+            </div>
+          </div>
+
+          <div class="row mb-3 p-2 announceDiv">
+            <div class="col">
+              <i class="fas fa-hand-peace"></i>
+            </div>
+            <div class="col-11">
+              <h6>Rally outside the capital this Saturday</h6>
+              <p class="announceText">15th St NW, Washington, DC 20024</p>
+              <p class="announceText">11am</p>
+              <p class="announceText">Governor Polk will be discussing Britains control over Oregon Country</p>
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1823.8336385673365!2d-77.03414062854775!3d38.88939755936105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b79f5f703841%3A0x1f43c54b2a261d3c!2sWashington+Monument+Lodge!5e0!3m2!1sen!2sus!4v1552084785960"
+                width="450" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <button>More Info/RSVP</button>
+            </div>
+          </div>
+
+          <div class="row mb-3 p-2 announceDiv">
+            <div class="col">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="col-11">
+              <h6>Last Fundraiser Before Election</h6>
+              <p class="announceText">15th St NW, Washington, DC 20024</p>
+              <p class="announceText">11am</p>
+              <p class="announceText">Governor Polk will be collecting funds from citizens for the final push on the
+                election.</p>
+              <img class="map" src="https://www.dia.org/sites/default/files/styles/featured_image/public/henry_electionday_resized.png?itok=s60M3kmG">
+              <button>More Info/RSVP</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col ">
+          <div class="rightTables pb-4">
+            <img class="candidateImg" src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTU3ODc5MDgxMzI4MTI1MjU3/james_k_polk.jpg">
+            <h4>Message from James</h4>
+            <p>"I have selected George M Dallas to be my vice presidential candidate."</p>
+          </div>
+          <div class="rightTables pb-4">
+            <nav>
+              <div class="nav nav-tabs m-3" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home1" role="tab"
+                  aria-controls="nav-home" aria-selected="true"><i class="fab fa-facebook"></i></a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile1" role="tab"
+                  aria-controls="nav-profile" aria-selected="false"><i class="fab fa-twitter-square"></i></a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact1" role="tab"
+                  aria-controls="nav-contact" aria-selected="false"><i class="fab fa-instagram"></i></a>
+              </div>
+            </nav>
+            <div class="tab-content rightTables" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home1" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                <img class="socialImg d-flex justify-content-center" src="Images/fb.JPG">
+              </div>
+              <div class="tab-pane fade" id="nav-profile1" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                <img class="socialImg d-flex justify-content-center" src="Images/dennis.JPG">
+              </div>
+              <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <img class="socialImg d-flex justify-content-center" src="Images/politico.JPG">
+              </div>
+            </div>
+          </div>
+
+          <div class="rightTables p-4">
+            <h4>Suggested Friends</h4>
+            <img class="friendImg d-inline m-1" src="https://www.potus.com/wp-content/uploads/10_john_tyler_1_gallery.jpg">
+            <h6 class="friendTitle d-inline p-4">John Tyler</h6>
+            <br>
+            <img class="friendImg d-inline m-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zachary_Taylor_by_Joseph_Henry_Bush%2C_c1848.jpg/250px-Zachary_Taylor_by_Joseph_Henry_Bush%2C_c1848.jpg">
+            <h6 class="friendTitle d-inline p-4">Zachary Taylor</h6>
+            <br>
+            <img class="friendImg d-inline m-1" src="https://i.pinimg.com/236x/d4/b0/c1/d4b0c1820593f3904923544dc2fa9037--us-presidents-american-presidents.jpg">
+            <h6 class="friendTitle d-inline p-4">Millard Fillmore</h6>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Mar 3, 2020 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("timer").innerHTML = days + " days " + hours + " hours " +
+          minutes + " minutes " + seconds + " seconds";
+
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
