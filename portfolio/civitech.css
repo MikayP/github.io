@@ -2,6 +2,11 @@
     background-color: #F5F5FA;
 }
 
+body{
+    font-family:'Hind Guntur', sans-serif;
+
+}
+
 .col-sm{
     border: 1px solid black;
     border-radius: 5px;
@@ -17,8 +22,23 @@ h1, h3{
     font-size:1.2rem;
     padding-bottom: 15px;
 }
+
+.btn{
+    margin-top:25px
+}
 .nav-link{
     color:black;
+}
+
+.logo{
+    height:55px;
+    margin:10px;
+}
+.headerBG{
+   background-color:#7793A3;
+   color:white;
+   text-shadow: 1px 1px 5px black;
+   margin-bottom:0px;
 }
 
 .headerInput{
@@ -37,7 +57,7 @@ h1, h3{
 
 .nav-item{
     text-align: center;
-    
+    margin-top:30px;
 }
 
 .announceText{
@@ -54,7 +74,9 @@ button{
     margin-top:1%;
     border:1px solid rgba(0, 0, 0, 0.418);
 }
-
+.card-img-top, .map{
+    height:250px;
+}
 .announceDiv{
     background-color: #fff;
     border-radius:5px;
