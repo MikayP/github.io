@@ -15,6 +15,7 @@ h1, h3{
 .header, .btn{
     background-color:rgb(37, 69, 87);
     font-size:1.2rem;
+    padding-bottom: 15px;
 }
 .nav-link{
     color:black;
@@ -25,6 +26,7 @@ h1, h3{
    width:250px;
 }
 
+
 .nav-bar{
     color:white;
 }
@@ -32,8 +34,10 @@ h1, h3{
 .map{
     width:100%;
 }
-.fas{
-    float:left;
+
+.nav-item{
+    text-align: center;
+    
 }
 
 .announceText{
@@ -104,4 +108,18 @@ width:100%;
 .right{
 right:0%;
    position: absolute;
+}
+
+/* page 2 */
+
+.dataBG{
+    background-color:#254557;
+    color:#fff;
+    border-radius: 5px;
+}
+
+.dataImg{
+    height:300px;
+    display:block;
+    margin: 0 auto;
 }
