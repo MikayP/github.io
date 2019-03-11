@@ -65,8 +65,10 @@
           aria-controls="nav-home" aria-selected="true">Latest</a>
         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
           aria-controls="nav-profile" aria-selected="false">Data</a>
-        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-          aria-controls="nav-contact" aria-selected="false">Contact</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-financial" role="tab"
+          aria-controls="nav-contact" aria-selected="false">Financial</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-social" role="tab" aria-controls="nav-contact"
+          aria-selected="false">Social</a>
       </div>
     </nav>
     <div class="tab-content" id="nav-tabContent">
@@ -108,8 +110,47 @@
             </div>
           </div>
         </div>
+
       </div>
-      
+      <div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top pb-2 mb-5" src="https://www.dia.org/sites/default/files/styles/featured_image/public/henry_electionday_resized.png?itok=s60M3kmG"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Last Fundraiser Before Election</h5>
+              <p class="card-text">Governor Polk will be collecting funds from citizens for the final
+                push on the election.</p>
+              <p class="card-text"><small class="text-muted">Posted by: HQ</small></p>
+              <button>View/Edit Event</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="https://museum.gwu.edu/sites/g/files/zaxdzs2356/f/image/Shenkman-27s-01-fv-header.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Town Hall Meeting</h5>
+              <p class="card-text">Governor Polk will be discussing Britains control over Oregon
+                Country</p>
+              <p class="card-text"><small class="text-muted">Posted By: Mike Portman - Street Team Lader</small></p>
+              <button>View/Edit Event</button>
+            </div>
+          </div>
+          <div class="card">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1823.8336385673365!2d-77.03414062854775!3d38.88939755936105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b79f5f703841%3A0x1f43c54b2a261d3c!2sWashington+Monument+Lodge!5e0!3m2!1sen!2sus!4v1552084785960"
+              width="450" height="229" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Rally outside the capital this Saturday</h5>
+              <p class="card-text">Governor Polk will be discussing Britains control over Oregon
+                Country</p>
+              <p class="card-text"><small class="text-muted">Posted by: HQ</small></p>
+              <button>View/Edit Event</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tab 2  -->
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
         <div class="row">
           <div class="col">
@@ -152,34 +193,165 @@
           <div class="col">
             <h4 class="dataBG p-3">Latest Poll Data</h4>
             <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home1" role="tab" aria-controls="nav-home" aria-selected="true">CNN</a>
-                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile1" role="tab" aria-controls="nav-profile" aria-selected="false">Politico</a>
-                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact1" role="tab" aria-controls="nav-contact" aria-selected="false">Austin Tribune</a>
-                </div>
-              </nav>
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home1" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <img class="dataImg" src="https://visme.co/blog/wp-content/uploads/2017/03/IPhone-Relative-Anxiety-Graph-1.png">
-
-                </div>
-                <div class="tab-pane fade" id="nav-profile1" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <img class="dataImg" src="https://cdn.ebaumsworld.com/mediaFiles/picture/619397/81431593.jpg">
-
-                </div>
-                <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <img class="dataImg" src="https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/trends-major.png">
-
-                </div>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home1" role="tab"
+                  aria-controls="nav-home" aria-selected="true">CNN</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile1" role="tab"
+                  aria-controls="nav-profile" aria-selected="false">Politico</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact1" role="tab"
+                  aria-controls="nav-contact" aria-selected="false">Austin Tribune</a>
               </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home1" role="tabpanel" aria-labelledby="nav-home-tab">
+                <img class="dataImg" src="https://visme.co/blog/wp-content/uploads/2017/03/IPhone-Relative-Anxiety-Graph-1.png">
+              </div>
+              <div class="tab-pane fade" id="nav-profile1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <img class="dataImg" src="https://cdn.ebaumsworld.com/mediaFiles/picture/619397/81431593.jpg">
+              </div>
+              <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <img class="dataImg" src="https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/trends-major.png">
+              </div>
+            </div>
 
           </div>
 
         </div>
       </div>
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+
+      <div class="tab-pane fade" id="nav-financial" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="row">
+          <div class="col">
+            <h4 class="dataBG p-3">Money</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Goal</th>
+                  <th scope="col">Actual</th>
+                  <th scope="col">% (+/-)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Week Total Budget</th>
+                  <td>$$$</td>
+                  <td>$$$</td>
+                  <td>%%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Marketing</th>
+                  <td>$$$</td>
+                  <td>$$$</td>
+                  <td>%%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Staffing</th>
+                  <td>$$$</td>
+                  <td>$$$</td>
+                  <td>%%</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <img class="dataImg" src="https://media.ycharts.com/charts/5b48ac7545bd868a418a67ba121c8d5e.png">
+          </div>
+
+          <div class="col">
+            <h4 class="dataBG p-3">Latest Poll Data</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Goal</th>
+                  <th scope="col">Actual</th>
+                  <th scope="col">% (+/-)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Week Total Budget</th>
+                  <td>$$$</td>
+                  <td>$$$</td>
+                  <td>%%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Marketing</th>
+                  <td>$$$</td>
+                  <td>$$$</td>
+                  <td>%%</td>
+                </tr>
+                <tr>
+                  <th scope="row">Staffing</th>
+                  <td>$$$</td>
+                  <td>$$$</td>
+                  <td>%%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="tab-pane fade" id="nav-social" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="row">
+          <div class="col">
+            <h4 class="dataBG p-3">Personal Social</h4>
+            <div class="row">
+              <div class="col">
+                <h6 class="dataBG">Twitter</h6>
+                  <img class="socialImg d-flex justify-content-center" src="Images/dennis.JPG">
+              </div>
+              <div class="col">
+                  <h6 class="dataBG">Instagram</h6>
+                  <img class="socialImg d-flex justify-content-center" src="Images/politico.JPG">
+              </div>
+              <div class="col">
+                  <h6 class="dataBG">Facebook</h6>
+                  <img class="socialImg d-flex justify-content-center" src="Images/fb.JPG">
+              </div>
+            </div>
+          </div>
+          
+             
+                
+         
+
+          <div class="col">
+            <h4 class="dataBG p-3">News</h4>
+            <div class="row">
+            <div class="col">
+                <h6 class="dataBG">CNN</h6>
+                <img class="socialImg d-flex justify-content-center" src="http://finestandroid.com/wp-content/uploads/2016/11/CNN-Breaking-US-Featured-Image.jpg">
+            </div>
+
+            <div class="col">
+                <h6 class="dataBG">CNN</h6>
+                <img class="socialImg d-flex justify-content-center" src="https://media.nbcdfw.com/images/652*367/beto-cruz-debate-lead.jpg">
+            </div>
+
+            <div class="col">
+                <h6 class="dataBG">CNN</h6>
+                <img class="socialImg d-flex justify-content-center" src="Images/fb.JPG">
+            </div>
+
+          </div>
+        </div>
+       
+      </div>
     </div>
   </div>
+
+
+
+  <footer>
+    <div class="container">
+      <p class="text-muted pt-3"> About | Careers | Support | Terms and Conditions | &copy; CoS
+      </p>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
