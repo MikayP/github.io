@@ -52,7 +52,7 @@
 <script>
 var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,4000);
+var slideInterval = setInterval(nextSlide,2500);
 
 function nextSlide() {
     slides[currentSlide].className = 'slide';
@@ -60,6 +60,7 @@ function nextSlide() {
     slides[currentSlide].className = 'slide showing';
 }
 </script>
-
+    <script src="https://code.jQuery.com/jQuery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   </body>
 </html>
