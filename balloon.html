@@ -42,25 +42,26 @@
 </div>
 
 <ul id="slides">
-        <li class="slide showing">Slide 1</li>
+        <li class="slide showing">Slides 1</li>
         <li class="slide">Slide 2</li>
         <li class="slide">Slide 3</li>
         <li class="slide">Slide 4</li>
         <li class="slide">Slide 5</li>
     </ul>
 
-<script>
-var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2500);
 
-function nextSlide() {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slide showing';
-}
-</script>
     <script src="https://code.jQuery.com/jQuery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <script>
+            var slides = document.querySelectorAll('#slides .slide');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide,2500);
+            
+            function nextSlide() {
+                slides[currentSlide].className = 'slide';
+                currentSlide = (currentSlide+1)%slides.length;
+                slides[currentSlide].className = 'slide showing';
+            }
+            </script>
   </body>
 </html>
