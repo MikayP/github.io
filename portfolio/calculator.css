@@ -270,9 +270,10 @@ body{
   padding: 0px;
   margin: 0px;
   right:20%;
-  top:20%;
+  top:23%;
   list-style-type: none;
   width:300px;
+  text-shadow: 2px 1px 5px darkblue;
 }
 
 .slide {
