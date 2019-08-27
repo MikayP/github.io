@@ -263,7 +263,6 @@ body{
   background: linear-gradient(#fff, #d3d3d3);
   z-index: -15;
 }
-
 #slides {
   position: absolute;
   height: 300px;
