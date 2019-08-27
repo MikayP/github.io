@@ -272,6 +272,7 @@ body{
   right:20%;
   top:20%;
   list-style-type: none;
+  width:300px;
 }
 
 .slide {
@@ -282,7 +283,7 @@ body{
   height: 100%;
   opacity: 0;
   z-index: 1;
-
+font-family:sans-serif;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
@@ -290,7 +291,6 @@ body{
 }
 .slide {
   font-size: 40px;
-  padding: 40px;
   box-sizing: border-box;
   color: #fff;
 }
