@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <style>
+    h1, h3, h4, p {text-align: center; color:rgb(19, 91, 133);}
+    h1{padding:10px; font-size:50px;}
+    h3, p{ font-size:2em;}
+    .img1{height:475px; margin: 0 auto; display:block; border-radius:10%;}
+    .img2{height:300px; margin: 50px auto; display:block; border-radius:10%;}
+    body,.bg-color{background-color:rgb(212, 198, 198);}
+    section{width:100%}
+    
+    /* #demo{border: 3px solid rgb(21, 52, 70);width:100%;margin:0 auto; padding: 25px 0; border-radius:30px; background-color: rgba(255, 255, 255, 0.384);} */
+.home-img{ height:600px;width:600px;  border-radius: 50%;}
+    .home-img{background:url(https://nhs-dynamic.secure.footprint.net/images/homes/ashtonwoods//41864346-200225.jpg?encoder=freeimage&progressive=true&maxwidth=1932&format=jpg);
+    margin:0 auto; background-position:center;background-size:cover; position:relative; border:2px solid black;
+    }
+    .bg-color{    position: absolute;
+    bottom: -3px;
+    right: -5px;
+    width: 103%;
+
+    }
+    </style>
+
+    
+</head>
+<body>
+  <section>
+    <h1>Countown to our Home</h1>
+    <div class=" text-center">
+
+            <div class="home-img">
+                <div class="bg-color"></div>
+            </div>
+
+        <h3 class="col-xs-10" id="demo"></h3>
+    </div>
+
+
+    
+  </section>
+<script>
+// Set the date we're counting down to
+var daysRemaining = new Date("July 19, 2021 16:00:00").getTime();
+let moveInDate = new Date('7/19/2021');
+let startCountdownDate = new Date('1/5/2021');
+
+
+let diffTime = Math.abs(startCountdownDate  - moveInDate );
+let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = daysRemaining - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds";
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Our Home!";
+  }
+
+}, 1000);
+
+
+window.addEventListener("load", myFunction);
+
+function myFunction() {
+var element = document.querySelector('.bg-color');
+
+var now = new Date().getTime();
+var distance = daysRemaining - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+ var percentDiff = (days / diffDays ) * 100;
+ console.log(percentDiff);
+element.style.height = percentDiff + "%";
+}
+
+
+// 2-1-2021 (85.64%)
+
+</script>
+</body>
+</html>
