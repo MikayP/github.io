@@ -43,6 +43,7 @@
             </div>
 
         <h3 class="col-xs-10" id="demo"></h3>
+        <p id="percent"></p>
     </div>
 
 
@@ -94,8 +95,10 @@ var now = new Date().getTime();
 var distance = daysRemaining - now;
 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
  var percentDiff = (days / diffDays ) * 100;
- console.log(percentDiff);
 element.style.height = percentDiff + "%";
+percentDiff = (percentDiff - 100).toFixed(2) * -1;
+
+document.getElementById("percent").innerHTML = percentDiff + "% " + "there. Counting from Jan 1st.";
 }
 
 
