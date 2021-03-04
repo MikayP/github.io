@@ -51,9 +51,9 @@
   </section>
 <script>
 // Set the date we're counting down to
-var daysRemaining = new Date("July 19, 2021 16:00:00").getTime();
-let moveInDate = new Date('7/19/2021');
-let startCountdownDate = new Date('1/5/2021');
+var daysRemaining = new Date("July 20, 2021 16:00:00").getTime();
+let moveInDate = new Date('7/20/2021');
+let startCountdownDate = new Date('3/3/2021');
 
 
 let diffTime = Math.abs(startCountdownDate  - moveInDate );
@@ -74,9 +74,11 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  document.getElementById("demo").innerHTML = days + " days to go"
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
-  + minutes + " minutes " + seconds + " seconds";
+  // document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+
+  // + minutes + " minutes " + seconds + " seconds";
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
