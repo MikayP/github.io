@@ -44,7 +44,7 @@
 
         <h3 class="col-xs-10" id="demo"></h3>
         <p id="percent"></p>
-        <p>Base off of 6/12 completion date</p>
+        <p id="based"></p>
     </div>
 
 
@@ -52,13 +52,14 @@
   </section>
 <script>
 // Set the date we're counting down to
-var daysRemaining = new Date("August 12, 2021 1:00:00").getTime();
-let moveInDate = new Date('8/12/2021');
+var daysRemaining = new Date("August 20, 2021 1:00:00").getTime();
+let moveInDate = new Date('8/20/2021');
 let startCountdownDate = new Date('3/3/2021');
 
 
 let diffTime = Math.abs(startCountdownDate  - moveInDate );
 let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -76,6 +77,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("demo").innerHTML = days + " days to go"
+
+
   // Display the result in the element with id="demo"
   // document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
 
@@ -100,7 +103,7 @@ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
  var percentDiff = (days / diffDays ) * 100;
 element.style.height = percentDiff + "%";
 percentDiff = (percentDiff - 100).toFixed(2) * -1;
-
+document.getElementById("based").innerHTML = "Based off of " + moveInDate.toDateString() + " completion date";
 document.getElementById("percent").innerHTML = percentDiff + "% " + "there.";
 }
 
